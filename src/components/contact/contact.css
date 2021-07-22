@@ -4,11 +4,15 @@
 
 .title {
     padding-left: 1rem;
-    background-color: #0D6EFD;
+    background-color: #0D6EFD !important;
     color: #FFF;
     font-weight: bold;
 }
 
 .icon {
     margin-right: 0.5rem;
+}
+
+.contact-btn {
+    text-decoration: none !important;
 }

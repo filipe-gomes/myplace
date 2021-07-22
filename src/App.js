@@ -85,12 +85,12 @@ function App() {
           </Navbar>
         </Row>
         <Row>
-          <Col md={5}>
+          <Col lg={5} md={12}>
             <UserDetails />
           </Col>
         </Row>
         <Row>
-          <Col md={5}>
+          <Col lg={5} md={12}>
             <Contact />
           </Col>
         </Row>
