@@ -1,0 +1,32 @@
+.profile-pic {
+  height: 15rem;
+  width: 15rem;
+  float: left;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+}
+
+.profile-info {
+  padding-top: 1.5rem;
+  line-height: 0.5rem;
+  font-size: 1rem;
+}
+
+.username {
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+@media only screen and (max-width: 1140px) {
+  .profile-pic {
+    display: none;
+  }
+  .profile-info {
+    font-size: medium;
+    margin-left: 1rem;
+  }
+  .username {
+    font-size: medium;
+    margin-left: 1rem;
+  }
+}
