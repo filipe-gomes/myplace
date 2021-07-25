@@ -19,7 +19,7 @@
   margin-top: 1rem;
 }
 
-@media only screen and (max-width: 1140px) {
+@media screen and (max-width: 1140px) {
   .profileInfo {
     font-size: medium;
     margin-left: 1rem;
@@ -31,5 +31,21 @@
   .profilePic {
     height: 10rem;
     width: 10rem;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .profileInfo {
+    font-size: small !important;
+    margin-left: 0.5rem;
+    line-height: 0.25rem;
+    padding: 0;
+  }
+  .username {
+    font-size: medium;
+  }
+  .profilePic {
+    height: 8rem;
+    width: 8rem;
   }
 }

@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Row, Col, Card, Button, Link } from "react-bootstrap";
+import { Container, Row, Col, Card, Button } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import {
@@ -47,7 +47,7 @@ export const ContactControls = () => {
               <Button
                 variant="link"
                 className={styles.contactBtn}
-                href="{`mailto:${email}`}"
+                href={`mailto:${email}`}
               >
                 <FontAwesomeIcon
                   className={styles.icon}
