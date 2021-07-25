@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Row, Col, Card, Button } from "react-bootstrap";
+import { Container, Row, Col, Card, Button, Link } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import {
@@ -43,11 +43,11 @@ export const ContactControls = () => {
         <Card.Header className={styles.title}>Contacting {name}</Card.Header>
         <Card.Body>
           <Row>
-            <Col sm={6} className={styles.columns}>
+            <Col sm={6}>
               <Button
                 variant="link"
                 className={styles.contactBtn}
-                href={`mailto:${email}`}
+                href="{`mailto:${email}`}"
               >
                 <FontAwesomeIcon
                   className={styles.icon}
@@ -55,21 +55,26 @@ export const ContactControls = () => {
                 />
                 Send Message
               </Button>
-              <Button variant="link" className={styles.contactBtn} onClick={changeFriendStatus}>
+              <Button
+                variant="link"
+                className={styles.contactBtn}
+                onClick={changeFriendStatus}
+                href="#"
+              >
                 <FontAwesomeIcon
                   className={styles.icon}
                   icon={["fas", "user-friends"]}
                 />
                 {isInNetwork ? "Unfriend" : "Add to Friends"}
               </Button>
-              <Button variant="link" className={styles.contactBtn}>
+              <Button variant="link" className={styles.contactBtn} href="#">
                 <FontAwesomeIcon
                   className={styles.icon}
                   icon={["fas", "comments"]}
                 />
                 Instant Message
               </Button>
-              <Button variant="link" className={styles.contactBtn}>
+              <Button variant="link" className={styles.contactBtn} href="#">
                 <FontAwesomeIcon
                   className={styles.icon}
                   icon={["fas", "users"]}
@@ -77,29 +82,29 @@ export const ContactControls = () => {
                 Add to Group
               </Button>
             </Col>
-            <Col sm={6} className={styles.columns}>
-              <Button variant="link" className={styles.contactBtn}>
+            <Col sm={6}>
+              <Button variant="link" className={styles.contactBtn} href="#">
                 <FontAwesomeIcon
                   className={styles.icon}
                   icon={["fas", "paper-plane"]}
                 />
                 Forward to Friend
               </Button>
-              <Button variant="link" className={styles.contactBtn}>
+              <Button variant="link" className={styles.contactBtn} href="#">
                 <FontAwesomeIcon
                   className={styles.icon}
                   icon={["fas", "star"]}
                 />
                 Add to Favorites
               </Button>
-              <Button variant="link" className={styles.contactBtn}>
+              <Button variant="link" className={styles.contactBtn} href="#">
                 <FontAwesomeIcon
                   className={styles.icon}
                   icon={["fas", "user-lock"]}
                 />
                 Block User
               </Button>
-              <Button variant="link" className={styles.contactBtn}>
+              <Button variant="link" className={styles.contactBtn} href="#">
                 <FontAwesomeIcon
                   className={styles.icon}
                   icon={["fas", "sort-numeric-up"]}

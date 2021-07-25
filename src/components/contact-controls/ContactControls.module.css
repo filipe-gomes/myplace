@@ -4,7 +4,7 @@
 
 .title {
   padding-left: 1rem;
-  background-color: #60a5fa !important;
+  background-color: #60a5fa;
   color: #fff;
   font-weight: bold;
 }
@@ -14,8 +14,9 @@
 }
 
 .contactBtn {
-  text-decoration: none !important;
-  text-align: center;
+  text-decoration: none;
+  display: flex;
+  justify-content: left;
 }
 
 .columns {

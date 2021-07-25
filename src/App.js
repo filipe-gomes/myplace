@@ -9,11 +9,7 @@ import { NavBar } from "./components/nav-bar/NavBar";
 import { RightPaneContainer } from "./containers/RightPaneContainer";
 import { LeftPaneContainer } from './containers/LeftPaneContainer';
 
-import "./App.css";
-
-
 function App() {
-
   return (
     <UserContextProvider>
       <Router>

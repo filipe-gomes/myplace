@@ -21,8 +21,8 @@ const Template = (args) => (
   </Container>
 );
 
-export const BlurbsExample = Template.bind({});
-BlurbsExample.args = {
+export const FriendSpaceExample = Template.bind({});
+FriendSpaceExample.args = {
   name: "Filipe",
   friends: friends,
   enemies: enemies,
