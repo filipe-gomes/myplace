@@ -1,0 +1,24 @@
+.container {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.blurbCard {
+  height: auto;
+}
+
+.blurbBody {
+  background-color: #fff;
+}
+
+.header {
+  padding-left: 1rem;
+  background-color: #f9c56c;
+  color: #ec6a16;
+  font-weight: bold;
+}
+
+.title {
+  color: #ec6a16;
+  font-weight: bold;
+}

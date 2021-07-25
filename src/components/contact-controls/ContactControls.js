@@ -14,7 +14,9 @@ import {
   faSortNumericUp,
 } from "@fortawesome/free-solid-svg-icons";
 
-import "./contact.css";
+import { useUserContext } from "../../contexts/UserContext";
+
+import styles from "./ContactControls.module.css";
 
 library.add(
   fas,
@@ -28,69 +30,78 @@ library.add(
   faSortNumericUp
 );
 
-export const Contact = () => {
+/**
+ * Component used to display options for interacting with/contacting user.
+ * @returns {React.FC}
+ */
+export const ContactControls = () => {
+  const { name, email, isInNetwork, setIsInNetwork } = useUserContext();
+  const changeFriendStatus = () => setIsInNetwork(!isInNetwork);
   return (
     <Container>
-      <Card>
-        <Card.Header className="title">Contacting Filipe</Card.Header>
+      <Card className={styles.contactCard}>
+        <Card.Header className={styles.title}>Contacting {name}</Card.Header>
         <Card.Body>
           <Row>
-            <Col sm={6}>
+            <Col sm={6} className={styles.columns}>
               <Button
                 variant="link"
-                className="contact-btn"
-                href="mailto:filipegomes404@gmail.com"
+                className={styles.contactBtn}
+                href={`mailto:${email}`}
               >
-                <FontAwesomeIcon className="icon" icon={["fas", "envelope"]} />
+                <FontAwesomeIcon
+                  className={styles.icon}
+                  icon={["fas", "envelope"]}
+                />
                 Send Message
               </Button>
-              <Button variant="link" className="contact-btn">
+              <Button variant="link" className={styles.contactBtn} onClick={changeFriendStatus}>
                 <FontAwesomeIcon
-                  className="icon"
+                  className={styles.icon}
                   icon={["fas", "user-friends"]}
                 />
-                Add to Friends
+                {isInNetwork ? "Unfriend" : "Add to Friends"}
               </Button>
-              <Button variant="link" className="contact-btn">
+              <Button variant="link" className={styles.contactBtn}>
                 <FontAwesomeIcon
-                  className="icon"
+                  className={styles.icon}
                   icon={["fas", "comments"]}
                 />
                 Instant Message
               </Button>
-              <Button variant="link" className="contact-btn">
+              <Button variant="link" className={styles.contactBtn}>
                 <FontAwesomeIcon
-                  className="icon"
+                  className={styles.icon}
                   icon={["fas", "users"]}
                 />
                 Add to Group
               </Button>
             </Col>
-            <Col sm={6}>
-              <Button variant="link" className="contact-btn">
+            <Col sm={6} className={styles.columns}>
+              <Button variant="link" className={styles.contactBtn}>
                 <FontAwesomeIcon
-                  className="icon"
+                  className={styles.icon}
                   icon={["fas", "paper-plane"]}
                 />
                 Forward to Friend
               </Button>
-              <Button variant="link" className="contact-btn">
+              <Button variant="link" className={styles.contactBtn}>
                 <FontAwesomeIcon
-                  className="icon"
+                  className={styles.icon}
                   icon={["fas", "star"]}
                 />
                 Add to Favorites
               </Button>
-              <Button variant="link" className="contact-btn">
+              <Button variant="link" className={styles.contactBtn}>
                 <FontAwesomeIcon
-                  className="icon"
+                  className={styles.icon}
                   icon={["fas", "user-lock"]}
                 />
                 Block User
               </Button>
-              <Button variant="link" className="contact-btn">
+              <Button variant="link" className={styles.contactBtn}>
                 <FontAwesomeIcon
-                  className="icon"
+                  className={styles.icon}
                   icon={["fas", "sort-numeric-up"]}
                 />
                 Rank User

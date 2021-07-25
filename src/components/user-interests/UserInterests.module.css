@@ -1,0 +1,36 @@
+.container {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.title {
+  padding-left: 1rem;
+  background-color: #60a5fa !important;
+  color: #fff;
+  font-weight: bold;
+}
+
+.interestType {
+  color: #3c6fa6;
+  font-weight: bold;
+  width: 33%;
+  padding: 0.5rem;
+}
+
+.interestTable {
+  background-color: #dbeafe;
+  margin: 0;
+  word-break: break-word;
+}
+
+.interestCard {
+  border-color: #60a5fa;
+  background-color: #dbeafe;
+  height: auto;
+}
+
+tr,
+td,
+th {
+  border: solid #fff;
+}

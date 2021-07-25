@@ -1,0 +1,55 @@
+.container {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.spaceCard {
+  height: auto;
+}
+
+.header {
+  padding-left: 1rem;
+  background-color: #f9c56c;
+  color: #ec6a16;
+  font-weight: bold;
+}
+
+.name {
+  color: #1e40af;
+  font-weight: bold;
+  text-align: center;
+}
+
+.column {
+  align-self: center;
+}
+
+.image {
+  height: auto;
+  width: 6rem;
+}
+
+.enemyBtn,
+.enemyBtn:visited,
+.enemyBtn:focus,
+.enemyBtn:active {
+  color: #ed0707;
+  float: right;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+  box-shadow: none;
+  outline: 0;
+}
+
+.enemyBtn:hover {
+  color: #cc0606;
+}
+
+@media only screen and (max-width: 650px) {
+  .image {
+    height: auto;
+    width: 15rem;
+    margin-bottom: 1rem;
+  }
+}
