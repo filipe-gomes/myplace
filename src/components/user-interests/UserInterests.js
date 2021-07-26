@@ -2,16 +2,16 @@ import React from "react";
 import PropTypes from "prop-types";
 import { Container, Card, Table } from "react-bootstrap";
 
-import { useUserContext } from "../../contexts/UserContext";
 
 import styles from "./UserInterests.module.css";
 
 /**
  * Component used to show user's interests on myplace
+ * @param {string} name name of user
  * @param {Object[]} interests array of strings represetings user's interests
+ * @returns {React.FC}
  */
-export const UserInterests = ({ interests }) => {
-  const { name } = useUserContext();
+export const UserInterests = ({ name, interests }) => {
   return (
     <Container className={styles.container}>
       <Card className={styles.interestCard}>
@@ -36,5 +36,6 @@ export const UserInterests = ({ interests }) => {
 };
 
 UserInterests.propTypes = {
+  name: PropTypes.string.isRequired,
   interests: PropTypes.arrayOf(Object).isRequired,
 };

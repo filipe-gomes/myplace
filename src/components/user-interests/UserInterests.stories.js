@@ -1,7 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 
-import { UserContextProvider } from "../../contexts/UserContext";
 import { UserInterests } from "./UserInterests";
 import { userInterestsProps } from "../../sample-data/userInterestsProps.sample";
 
@@ -11,15 +10,13 @@ export default {
 };
 
 const Template = (args) => (
-  <UserContextProvider>
-    <Container fluid>
-      <Row>
-        <Col lg={5} md={12}>
-          <UserInterests {...args} />
-        </Col>
-      </Row>
-    </Container>
-  </UserContextProvider>
+  <Container fluid>
+    <Row>
+      <Col lg={5} md={12}>
+        <UserInterests {...args} />
+      </Col>
+    </Row>
+  </Container>
 );
 
 export const UserInterestsExample = Template.bind({});

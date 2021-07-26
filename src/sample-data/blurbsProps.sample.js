@@ -9,6 +9,6 @@ export const blurbsProps = {
   peopleInterest:
     "<p><b>You</b>! I mean you there, reading this <i>blurb</i>. I hope I get a chance to not only share more about me, but also learn more about you. " +
     "I'm excited at the opportunity to bring my knowledge and experience to the team and hopefully make a big impact in your projects. " +
-    "If I get a chance to work with you, I promise to always be nice on the code reviews &#128540; , share any beers that I ever may bring to the office &#127866; , " +
-    "and just always try to be an easy person to get along with. &#128516;</p>",
+    "If we ever do get to work together, I promise to always be nice on code reviews &#128540; , share any beers that I may ever bring to the office &#127866; , " +
+    "and just generally try to be an easy person to get along with. &#128516;</p>",
 };

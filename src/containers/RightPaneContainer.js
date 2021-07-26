@@ -9,6 +9,10 @@ import { friendSpaceProps } from "../sample-data/friendSpaceProps.sample";
 
 import { useUserContext } from "../contexts/UserContext";
 
+/**
+ * Build container that wraps right pane components into a single functional component
+ * @returns {React.FC}
+ */
 export const RightPaneContainer = () => {
   const { name, isInNetwork } = useUserContext();
   const { about, peopleInterest } = blurbsProps;

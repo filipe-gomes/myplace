@@ -22,6 +22,7 @@ export const NavBar = () => {
             target="_blank"
             rel="noopener noreferrer"
             href={home}
+            data-testid="home-button"
           >
             Home
           </a>
@@ -45,6 +46,7 @@ export const NavBar = () => {
             target="_blank"
             rel="noopener noreferrer"
             href={blog}
+            data-testid="blog-button"
           >
             Blog
           </a>

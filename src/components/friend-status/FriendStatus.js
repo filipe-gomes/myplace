@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 import styles from "./FriendStatus.module.css";
 
@@ -17,4 +18,9 @@ export const FriendStatus = ({ name, isInNetwork }) => {
   return (
     <div className={styles.status}>{name} is in your extended network</div>
   );
+};
+
+FriendStatus.propTypes = {
+  name: PropTypes.string.isRequired,
+  isInNetwork: PropTypes.bool.isRequired,
 };

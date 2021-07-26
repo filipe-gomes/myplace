@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import { Container, Row, Col, Card, Button } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { library } from "@fortawesome/fontawesome-svg-core";
@@ -32,10 +33,13 @@ library.add(
 
 /**
  * Component used to display options for interacting with/contacting user.
+ * @param {Object} ContactControlsProps
+ * @param {string} ContactControlsProps.name name of user
+ * @param {string} ContactControlsProps.email email of user
  * @returns {React.FC}
  */
-export const ContactControls = () => {
-  const { name, email, isInNetwork, setIsInNetwork } = useUserContext();
+export const ContactControls = ({ name, email }) => {
+  const { isInNetwork, setIsInNetwork } = useUserContext();
   const changeFriendStatus = () => setIsInNetwork(!isInNetwork);
   return (
     <Container>
@@ -117,4 +121,9 @@ export const ContactControls = () => {
       </Card>
     </Container>
   );
+};
+
+ContactControls.propTypes = {
+  name: PropTypes.string.isRequired,
+  email: PropTypes.string.isRequired,
 };

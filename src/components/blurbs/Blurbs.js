@@ -1,9 +1,18 @@
 import React from "react";
+import PropTypes from "prop-types";
 import { Container, Card } from "react-bootstrap";
 
 import { createMarkup } from "../../utils/createMarkup";
 import styles from "./Blurbs.module.css";
 
+/**
+ * 
+ * @param {Object} BlurbsProps
+ * @param {string} BlurbsProps.name name of user
+ * @param {string} BlurbsProps.about about section of blurb
+ * @param {string} BlurbsProps.peopleInterest Who I'd Like To Meet section of blurb 
+ * @returns {React.FC}
+ */
 export const Blurbs = ({ name, about, peopleInterest }) => {
   return (
     <Container className={styles.container}>
@@ -18,4 +27,10 @@ export const Blurbs = ({ name, about, peopleInterest }) => {
       </Card>
     </Container>
   );
+};
+
+Blurbs.propTypes = {
+  name: PropTypes.string.isRequired,
+  about: PropTypes.string.isRequired,
+  peopleInterest: PropTypes.string.isRequired,
 };

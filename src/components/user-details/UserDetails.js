@@ -2,14 +2,13 @@ import React from "react";
 import PropTypes from "prop-types";
 import { Container, Row, Col } from "react-bootstrap";
 
-import { useUserContext } from "../../contexts/UserContext";
-
 import styles from "./UserDetails.module.css";
 import AndreDevito from "../../assets/images/AndreDevito.jpeg";
 
 /**
  * Build UserDetails. Displays user details on profile page
  * @param {Object} UserDetailsProps
+ * @param {string} UserDetailsProps.name name of user
  * @param {string} UserDetailsProps.description description entered by user
  * @param {string} UserDetailsProps.gender user gender
  * @param {number} UserDetailsProps.age user age in years
@@ -18,13 +17,13 @@ import AndreDevito from "../../assets/images/AndreDevito.jpeg";
  * @returns {React.FC}
  */
 export const UserDetails = ({
+  name,
   description,
   gender,
   age,
   location,
   lastLogin,
 }) => {
-  const { name } = useUserContext();
   return (
   <Container>
     <Row>
