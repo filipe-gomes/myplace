@@ -1,3 +1,10 @@
+@media screen and (min-width: 1500px) {
+  .appBody {
+    padding-left: 10rem;
+    padding-right: 10rem;
+  }
+}
+
 .App {
   text-align: center;
 }

@@ -8,7 +8,7 @@
 
 .profileInfo {
   padding-top: 1.5rem;
-  padding-left: 1.0rem;
+  padding-left: 1.5rem;
   line-height: 0.5rem;
   font-size: 1rem;
 }
@@ -29,6 +29,13 @@
     font-size: medium;
   }
   .profilePic {
+    height: 11rem;
+    width: 11rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .profilePic {
     height: 10rem;
     width: 10rem;
   }
@@ -36,7 +43,7 @@
 
 @media screen and (max-width: 350px) {
   .profileInfo {
-    font-size: small !important;
+    font-size: small;
     margin-left: 0.5rem;
     line-height: 0.25rem;
     padding: 0;

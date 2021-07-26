@@ -9,6 +9,8 @@ import { NavBar } from "./components/nav-bar/NavBar";
 import { RightPaneContainer } from "./containers/RightPaneContainer";
 import { LeftPaneContainer } from './containers/LeftPaneContainer';
 
+import styles from "./App.module.css";
+
 function App() {
   return (
     <UserContextProvider>
@@ -17,7 +19,7 @@ function App() {
           <Row>
             <NavBar />
           </Row>
-          <Row>
+          <Row className={styles.appBody}>
             <Col lg={5} md={12}>
               <LeftPaneContainer />
             </Col>
