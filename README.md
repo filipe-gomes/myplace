@@ -10,6 +10,7 @@ To run this project locally:
 * From here, install all dependencies with `yarn`
 * Once it's done installing, you can run the app in development mode with `yarn start`
 * Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
 ![Screen Shot 2021-07-25 at 7 56 02 PM](https://user-images.githubusercontent.com/42053052/126919664-4e28dbe6-0136-4d91-9fb5-0bb7e137bbb3.png)
 
 ### Testing
